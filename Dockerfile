@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the WAR file into the container
-COPY target/my-app.war /app/my-app.war
+COPY /var/lib/jenkins/workspace.Test-pipeline-18-Jan/my-app.war /app/my-app.war
 
 # Expose the port the app runs on (if needed)
 EXPOSE 8080
