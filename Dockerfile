@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the WAR file into the container
-COPY COPY target/my-web-app-1.0-SNAPSHOT.war /app/my-app.war
+COPY  target/my-web-app-1.0-SNAPSHOT.war /app/my-app.war
 
 # Expose the port the app runs on (if needed)
 EXPOSE 8080
